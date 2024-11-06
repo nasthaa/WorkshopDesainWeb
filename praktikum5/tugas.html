@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas | Praktikum 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /* style navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #134576;
+        }
+        .navbar ul li a:hover {
+            color: #79a3ce;
+            text-decoration: none;
+        }
+        hr {
+            width: 50px;
+            border: 2px solid #333;
+            margin: 10px auto;
+        }
+        .gallery-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .gallery-subtitle {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+        .gallery-item h5 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .gallery-item p {
+            font-size: 14px;
+            color: #777;
+        }
+        @media (max-width: 575px) {
+            .gallery-item {
+                margin-bottom: 20px;
+            }
+        }
+        /* dark mode */
+        body.dark-mode {
+            background-color: #181818;
+            color: #e0e0e0;
+        }
+        body.dark-mode .navbar {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+        body.dark-mode .navbar ul li a {
+            color: #e0e0e0;
+        }
+        body.dark-mode .navbar ul li a:hover {
+            color: #ccc;
+        }
+        body.dark-mode .hamburger {
+            color: #e0e0e0;
+        }
+        body.dark-mode .navbar ul {
+            background-color: #333;
+        }
+        body.dark-mode hr {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo-pens.png" alt="Logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Shortcodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dark-mode-toggle" href="#"><i class="bi bi-moon"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- gallery -->
+    <div class="container text-center mt-5">
+        <h2 class="gallery-title text-uppercase">Chainsaw Man x Jujutsu Kaisen</h2>
+        <p class="gallery-subtitle">Some of the Awesome Projects we've worked on.</p>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="yoru1.jpg" alt="Yoru">
+                    <h5 class="fw-bold mx-2 me-2">Yoru ヨル</h5>
+                    <p class="mx-2 me-2">The villainous deuteragonist of the <span style="color: #134576;">Academy Saga</span>. She is the <b>War Devil</b> (戦せん争そうの悪あく魔ま Sensō no Akuma).</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="gojo1.jpg" alt="Gojo">
+                    <h5 class="fw-bold mx-2 me-2">Gojo 五条悟</h5>
+                    <p class="mx-2 me-2">One of the main protagonists of the <span style="color: #134576;"><i>Jujutsu Kaisen</i></span> series. He is a <span style="color: #134576;">special grade jujutsu sorcerer</span> and widely recognized as the strongest in the world.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="makima1.jpg" alt="Makima">
+                    <h5 class="fw-bold mx-2 me-2">Makima マキマ</h5>
+                    <p class="mx-2 me-2">The main antagonist of the <span style="color: #134576;">Public Safety Saga</span>. She was the <span style="color: #134576;">Chief Cabinet Secretary's Personal Devil Hunter</span> who took <span style="color: #134576;">Denji</span> in as her human pet.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="sukuna1.jpg" alt="Sukuna">
+                    <h5 class="fw-bold mx-2 me-2">Sukuna 両面宿儺</h5>
+                    <p class="mx-2 me-2">The strongest <span style="color: #134576;">jujutsu sorcerer</span> from over a thousand years ago. Regarded as the undisputed <b>King of Curses</b> (呪のろいの王おう <i>Noroi no Ō</i>).</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="sukuna2.jpg" alt="Sukuna">
+                    <h5 class="fw-bold mx-2 me-2">Sukuna 両面宿儺</h5>
+                    <p class="mx-2 me-2">The strongest <span style="color: #134576;">jujutsu sorcerer</span> from over a thousand years ago. Regarded as the undisputed <b>King of Curses</b> (呪のろいの王おう <i>Noroi no Ō</i>).</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="makima2.jpg" alt="Makima">
+                    <h5 class="fw-bold mx-2 me-2">Makima マキマ</h5>
+                    <p class="mx-2 me-2">The main antagonist of the <span style="color: #134576;">Public Safety Saga</span>. She was the <span style="color: #134576;">Chief Cabinet Secretary's Personal Devil Hunter</span> who took <span style="color: #134576;">Denji</span> in as her human pet.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="gojo2.jpg" alt="Gojo">
+                    <h5 class="fw-bold mx-2 me-2">Gojo 五条悟</h5>
+                    <p class="mx-2 me-2">One of the main protagonists of the <span style="color: #134576;"><i>Jujutsu Kaisen</i></span> series. He is a <span style="color: #134576;">special grade jujutsu sorcerer</span> and widely recognized as the strongest in the world.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 p-0">
+                <div class="gallery-item">
+                    <img src="yoru2.jpg" alt="Yoru">
+                    <h5 class="fw-bold mx-2 me-2">Yoru ヨル</h5>
+                    <p class="mx-2 me-2">The villainous deuteragonist of the <span style="color: #134576;">Academy Saga</span>. She is the <b>War Devil</b> (戦せん争そうの悪あく魔ま Sensō no Akuma).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.querySelector('.dark-mode-toggle');
+            const body = document.body;
+
+            // Memeriksa apakah mode gelap diaktifkan
+            if (localStorage.getItem('dark-mode') === 'enabled') {
+                body.classList.add('dark-mode');
+                toggleButton.querySelector('i').classList.replace('bi-moon', 'bi-sun');
+            }
+
+            toggleButton.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('dark-mode', 'enabled');
+                    toggleButton.querySelector('i').classList.replace('bi-moon', 'bi-sun');
+                } else {
+                    localStorage.removeItem('dark-mode');
+                    toggleButton.querySelector('i').classList.replace('bi-sun', 'bi-moon');
+                }
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

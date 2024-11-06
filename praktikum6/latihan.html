@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan | Praktikum 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="mt-5">
+            <div class="row mb-3">
+                <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nama" placeholder="Nama">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="username" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alamat" placeholder="Alamat">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="hobi" class="col-sm-2 col-form-label">Hobi</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="hobi" placeholder="Hobi">
+                </div>
+            </div>
+
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Menikah</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="menikah" id="menikah1" value="ya">
+                        <label class="form-check-label" for="menikah1">Ya</label>
+                    </div>
+                    <div class="form-check  mt-2">
+                        <input class="form-check-input" type="radio" name="menikah" id="menikah2" value="tidak">
+                        <label class="form-check-label" for="menikah2">Tidak</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="row mb-3">
+                <label for="tinggi-badan" class="col-sm-2 col-form-label">Tinggi Badan</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="tinggi-badan" placeholder="Tinggi Badan">
+                        <span class="input-group-text">cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="berat-badan" class="col-sm-2 col-form-label">Berat Badan</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="berat-badan" placeholder="Berat Badan">
+                        <span class="input-group-text">kg</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

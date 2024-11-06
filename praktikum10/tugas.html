@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas | Praktikum 10</title>
+</head>
+<body>
+    <h1>Nama: <span id="user"></span></h1>
+
+    <h1>Hobi: </h1>
+    <h4 id="hobby"></h4>
+    <script>
+        const user_place = document.getElementById('user');
+
+        const user_logged = "Khoironi";
+
+        console.log(user_logged);
+
+        user_place.innerHTML = user_logged;
+
+        const hobby_items = document.getElementById('hobby');
+
+        const your_hobby = ['Joging', 'Travelong', 'Kuliner'];
+
+        let parent = '<ol>';
+        your_hobby.forEach((hobby) => {
+            parent += '<li>' + hobby + '</li>';
+            console.log(`${hobby}`);
+        });
+
+        parent += '</ol>';
+        hobby_items.innerHTML = parent;
+    </script>    
+</body>
+</html>

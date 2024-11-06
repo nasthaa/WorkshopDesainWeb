@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan | Praktikum 10</title>
+</head>
+<body>
+    <h1>Keahlian: </h1>
+    <h4 id="skill"></h4>
+    <script>
+        const skill_items = document.getElementById('skill');
+
+        const your_skill = ['UX desain', 'Web developer', 'Video editor'];
+
+        let parent = '<ul>';
+        your_skill.forEach((skill) => {
+            parent += '<li>' + skill + '</li>';
+            console.log(`${skill}`);
+        });
+
+        parent += '</ul>';
+        skill_items.innerHTML = parent;
+    </script>    
+</body>
+</html>
