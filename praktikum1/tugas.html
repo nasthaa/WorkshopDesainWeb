@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <!-- <link rel="shortcut icon" href="warungkita.png" type="image/x-icon"> -->
+    <title>Biodata Card | Nur Aini Agusthina</title>
+    <!-- style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        :root {
+            --fir-color-grey: rgba(59, 54, 54, 0.4);
+            --dark-grey: #333;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif; /* font poppins */
+        }
+        .fir-clickcircle {
+            height: 80px;
+            width: 80px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        .fir-image-figure {
+            margin: 0 auto; /* memusatkan card secara horizontal */
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+            text-decoration: none;
+            padding: 20px; /* padding jarak dalam */
+            border: 1px solid #ddd; /* menambahkan border */
+            border-radius: 10px; /* membuat border melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* efek bayangan */
+            background-color: #fff; /* warna latar belakang putih seperti kartu */
+            width: 50vw; /* lebar setengah layar */
+            max-width: 600px; /* lebar maksimum untuk ukuran yang lebih besar */
+        }
+        .fir-image-figure .caption, .fir-image-figure figcaption {
+            padding-left: 15px;
+        }
+        html.wf-active .fir-image-figure .fig-author-figure-title {
+            font-family: 'Poppins', sans-serif; /* ubah ke poppins */
+            font-size: 16px;
+        }
+        .fir-image-figure .fig-author-figure-title {
+            color: var(--dark-grey);
+            font-family: 'Poppins', sans-serif; /* ubah ke poppins */
+            font-weight: 400;
+            font-size: 15px;
+            margin-top: 2px;
+        }
+        .fir-image-figure p {
+            color: var(--fir-color-grey); /* warna font abu muda */
+        }
+        .fir-imageover {
+            position: relative;
+            display: flex;
+        }
+        .fir-imageover-color {
+            display: none; /* menghapus background biru */
+        }
+        .fir-imageover-image {
+            display: none; /* menghapus logo Twitter */
+        }
+    </style>
+</head>
+<body>
+    <figure class="fir-image-figure">
+        <a class="fir-imageover" rel="noopener" target="_blank" href="https:instagram.com/ainagusthina">
+            <img class="fir-author-image fir-clickcircle" src="me.webp" alt="Nur Aini Agusthina" style="width: 160px; height: 160px;">
+        </a>
+        <figcaption>
+            <div class="fig-author-figure-title">
+                <h2><strong>Nur Aini Agusthina</strong></h2>
+                <h4>Informatics Engineering</h4>
+                <br>
+                <table>
+                    <tr>
+                        <td>Age</td>
+                        <td>: 19 y.o.</td>
+                    </tr>
+                    <tr>
+                        <td>Hobby</td>
+                        <td>: Singing, Cooking, and Traveling</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Music</td>
+                        <td>: <a href="https://open.spotify.com/track/1FWsomP9StpCcXNWmJk8Cl?si=673ScUSTTMyvkIWjGzvHTQ" target="_blank" style="text-decoration: none;">K. &#8212; Cigarettes After Sex</a></td>
+                    </tr>
+                </table>
+                <br>
+                <p><i>
+                    Hello, I'm Nur Aini Agusthina, a student at the Electronic Engineering Polytechnic Institute of Surabaya class of 2024, majoring at D4 Informatics Engineering
+                </i></p>
+            </div>
+        </figcaption>
+    </figure>
+    <center>
+        <!-- <table width="60%" cellpadding="10">
+            <tr>
+                <td rowspan="5">
+                    <img src="me.webp" alt="Nur Aini Agusthina" style="width: 160px; height: 160px;">
+                </td>
+                <td colspan="2"><h2>Nur Aini Agusthina &#8212;<i> Informatics Engineering</i></h2></td>
+            </tr>
+            <tr>
+                <td><strong>Age</strong></td>
+                <td>19 y.o.</td>
+            </tr>
+            <tr>
+                <td><strong>Hobby</strong></td>
+                <td>: Singing, Cooking, and Traveling</td>
+            </tr>
+            <tr>
+                <td><strong>Favorite Music</strong></td>
+                <td>: End of Beginning - Djo</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        Hello, I'm Nur Aini Agusthina, a student at the Electronic Engineering Polytechnic Institute of Surabaya class of 2024, majoring at D4 Informatics Engineering.
+                    </p>
+                </td>
+            </tr>
+        </table> -->
+    </center>
+</body>
+</html>
