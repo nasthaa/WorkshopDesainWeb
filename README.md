@@ -1,2 +1,2 @@
 # WorkshopDesainWeb
-Semester 1 | Archive/reserve project of the course Workshop Desain Web.
+Semester 1 | Workshop Desain Web. Practicum assignment archive.
